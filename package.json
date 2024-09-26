@@ -1,0 +1,20 @@
+{
+  "name": "dsa_javascript",
+  "version": "1.0.0",
+  "description": "DSA in Javascript",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrinmoygit2022/DSA_Javascript.git"
+  },
+  "author": "Mrinmoy Roy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrinmoygit2022/DSA_Javascript/issues"
+  },
+  "homepage": "https://github.com/mrinmoygit2022/DSA_Javascript#readme"
+}
