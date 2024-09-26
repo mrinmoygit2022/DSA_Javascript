@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Objects and Maps for DSA in JavaScript</title>
+  </head>
+  <body>
+    <div class="navbar-container">
+      <div class="navbar-content">
+        <h1 class="navbar">DSA in JavaScript Topics | Object & Maps</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2 class="flex cursor-pointer" onclick="toggleContent('objects')">
+        <img class="topic-logo" src="./assets/img/fast-forward.png" alt="#" />
+        <span class="ms-10">Objects (Dictionaries)</span>
+        <span id="objects-status"></span>
+        <span id="objects-arrow" class="arrow">▼</span>
+        <button class="mark-read" onclick="markAsRead('objects')">Mark as Read</button>
+      </h2>
+      <div id="objects" class="content">
+        <ul>
+          <li>
+            In JavaScript, objects are often used as dictionaries to store
+            key-value pairs.
+          </li>
+          <li>The keys can only be strings or symbols.</li>
+          <li>Objects provide unordered data structures.</li>
+        </ul>
+
+        <h3>Code:</h3>
+        <pre><code>
+      let dictionary = {
+        key1: "value1",
+        key2: "value2",
+        key3: "value3"
+      };
+      
+      // Accessing values
+      console.log(dictionary.key1);  // Output: value1
+      
+      // Adding new key-value pair
+      dictionary.key4 = "value4";
+      
+      // Looping through keys
+      for (let key in dictionary) {
+        console.log(`${key}: ${dictionary[key]}`);
+      }
+        </code></pre>
+        <!-- <button onclick="markAsRead('objects')">Mark as Read</button> -->
+      </div>
+
+      <h2 class="flex cursor-pointer" onclick="toggleContent('map')">
+        <img class="topic-logo" src="./assets/img/fast-forward.png" alt="#" />
+        <span class="ms-10">Map</span>
+        <span id="map-status"></span>
+        <span id="map-arrow" class="arrow">▼</span>
+        <button class="mark-read" onclick="markAsRead('map')">Mark as Read</button>
+      </h2>
+      <div id="map" class="content">
+        <ul>
+          <li>
+            Map is an ordered collection of key-value pairs, introduced in ES6.
+          </li>
+          <li>
+            Keys can be any type (objects, functions, etc.), unlike objects
+            where keys are strings or symbols.
+          </li>
+          <li>Map remembers the original insertion order of the keys.</li>
+        </ul>
+
+        <h3>Map Example Code:</h3>
+        <pre><code>
+      let map = new Map();
+      
+      // Adding key-value pairs
+      map.set('key1', 'value1');
+      map.set('key2', 'value2');
+      map.set('key3', 'value3');
+      
+      // Accessing values
+      console.log(map.get('key1'));  // Output: value1
+      
+      // Checking if a key exists
+      console.log(map.has('key2'));  // Output: true
+      
+      // Looping through key-value pairs
+      for (let [key, value] of map) {
+        console.log(`${key}: ${value}`);
+      }
+      
+      // Removing a key
+      map.delete('key2');
+      
+      // Getting the size of the map
+      console.log(map.size);  // Output: 2
+        </code></pre>
+      </div>
+
+      <h2 class="flex cursor-pointer" onclick="toggleContent('differences')">
+        <img class="topic-logo" src="./assets/img/fast-forward.png" alt="#" />
+        <span class="ms-10">Differences between Objects and Maps</span>
+        <span id="differences-status"></span>
+        <span id="differences-arrow" class="arrow">▼</span>
+        <button class="mark-read" onclick="markAsRead('differences')">Mark as Read</button>
+      </h2>
+      <div id="differences" class="content">
+        <ul>
+          <li>
+            <strong>Key types:</strong> Object keys are always strings or
+            symbols, while Map keys can be any data type.
+          </li>
+          <li>
+            <strong>Order:</strong> Map preserves the insertion order of its
+            keys, whereas Object does not guarantee order (though modern engines
+            tend to keep order for string keys).
+          </li>
+          <li>
+            <strong>Size:</strong> Map has a size property, while Object does
+            not have a direct way to get the size.
+          </li>
+          <li>
+            <strong>Methods:</strong> Map provides useful methods like set, get,
+            delete, and has, which make it more powerful for managing key-value
+            pairs than Object.
+          </li>
+        </ul>
+        <!-- <button onclick="markAsRead('differences')">Mark as Read</button> -->
+      </div>
+    </div>
+
+    <script src="toggled.js"></script>
+  </body>
+</html>

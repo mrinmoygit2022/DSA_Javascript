@@ -1,0 +1,144 @@
+:root{
+    --text-black: #333;   
+    --text-light-gray: #f4f4f4;
+    --marked-read: #d4edda;
+    --text-marked-read: #155724;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ededed;
+}
+
+/* Navbar */
+
+.text-center {
+  text-align: center;
+}
+
+.navbar-container {
+  width: 100%;
+  padding: 15px;
+  background-color: #f8f9fa; /* light gray for navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Centers the content */
+  align-items: center;
+}
+
+.navbar h1 {
+  font-size: 1.8em;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.content {
+  display: none;
+  padding: 10px 0;
+}
+
+.topic-logo {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.arrow {
+  padding-left: 10px;
+  font-size: 1.2em;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Navbar end */
+
+.container {
+  max-width: 1140px; /* You can adjust the max-width based on your design */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box; /* Ensures padding doesn't affect the total width */
+}
+
+h1, h2 {
+  color: #333;
+  cursor: pointer;
+}
+code {
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 4px;
+}
+.content {
+  display: none; /* Hide all sections by default */
+  margin-bottom: 15px;
+}
+.read {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 5px;
+  border-radius: 5px;
+}
+button.mark-read {
+  font-size: 12px !important;
+  margin-top: 0px !important;
+  margin-left: 10px !important;
+
+}
+.arrow {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+  h2.flex{
+    display: flex;
+    align-items: center;
+  }
+  h2.cursor-pointer{
+    cursor: pointer;
+  }
+  h2 > span.ms-10{
+    margin-left: 10px;
+  }
+
+
+
+  .text-center{
+    text-align: center;
+  }
+
+  .topic-logo{
+    width: 18px;
+  }
